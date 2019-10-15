@@ -1,0 +1,15 @@
+{
+    "include": ["./src/**/*.ts"],
+    "exclude": ["./**/node_modules"],
+    "compilerOptions": {
+        "outDir": "lib",
+        "module": "esnext",
+        "target": "es2019",
+        "noUnusedParameters": true,
+        "noUnusedLocals": true,
+        "preserveConstEnums": true,
+        "moduleResolution": "node",
+        "strict": true,
+        "strictNullChecks": true
+    },
+}

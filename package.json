@@ -1,0 +1,54 @@
+{
+  "name": "reuseable-templates",
+  "version": "1.0.0",
+  "description": "template literals that can be reused in a similar way to printf formatting",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "pika build",
+    "test": "ts-mocha -p test/tsconfig.json test/**/*.spec.ts"
+  },
+  "devDependencies": {
+    "@pika/pack": "^0.5.0",
+    "@pika/plugin-build-node": "^0.6.1",
+    "@pika/plugin-build-web": "^0.6.1",
+    "@pika/plugin-ts-standard-pkg": "^0.6.1",
+    "@types/mocha": "^5.2.7",
+    "mocha": "^6.2.1",
+    "ts-mocha": "^6.0.0",
+    "typescript": "^3.6.4"
+  },
+  "@pika/pack": {
+    "pipeline": [
+      [
+        "@pika/plugin-ts-standard-pkg",
+        {
+          "exclude": [
+            "test/**/*",
+            "examples/**/*"
+          ]
+        }
+      ],
+      [
+        "@pika/plugin-build-node"
+      ],
+      [
+        "@pika/plugin-build-web"
+      ]
+    ]
+  },
+  "keywords": [
+    "string",
+    "format",
+    "template",
+    "template-literals",
+    "printf"
+  ],
+  "author": [
+    "brecert <11599528+Brecert@users.noreply.github.com>"
+  ],
+  "source": "pkg/dist-src/index.js",
+  "types": "pkg/dist-types/index.d.ts",
+  "main": "pkg/dist-node/index.js",
+  "module": "pkg/dist-web/index.js"
+}
