@@ -1,17 +1,13 @@
-<h1 align="center">Welcome to reuseable-templates</h1>
+## reuseable-templates
+
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
   <a href="#" target="_blank">
     <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
   </a>
-  <a href="https://twitter.com/brecert" target="_blank">
-    <img alt="Twitter: brecert" src="https://img.shields.io/twitter/follow/brecert.svg?style=social" />
-  </a>
 </p>
 
 > template literals that can be reused in a similar way to printf formatting
-
-### [Homepage](https://github.com/brecert/reuseable-templates)
 
 ## Building
 
