@@ -1,7 +1,7 @@
 {
   "name": "reuseable-templates",
-  "description": "reuseable template literals",
-  "version": "1.0.0",
+  "description": "template literals that can be reused in a similar way to printf formatting",
+  "version": "1.0.1",
   "license": "MIT",
   "files": [
     "dist-*/",
