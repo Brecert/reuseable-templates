@@ -1,6 +1,6 @@
 {
   "name": "reuseable-templates",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "template literals that can be reused in a similar way to printf formatting",
   "main": "pkg/dist-node/index.js",
   "license": "MIT",
