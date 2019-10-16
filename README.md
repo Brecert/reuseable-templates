@@ -9,6 +9,27 @@
 
 > template literals that can be reused in a similar way to printf formatting
 
+## Example
+```js
+import fmt from 'reuseable-templates'
+
+const hello = 'hello';
+const world = 'world';
+
+const tmpl = fmt`${String} ${world}`
+
+tmpl(hello)
+// => hello world
+
+tmpl('bye')
+// => bye world
+
+const tmpl2 = fmt`${JSON} ${'-'.repeat(2)} ${Number}`
+
+tmpl2(hello, 0)
+// => "hello" -- 0
+```
+
 ## Building
 
 ```sh
